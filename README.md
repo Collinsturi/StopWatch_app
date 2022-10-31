@@ -1,3 +1,6 @@
+This simple stopwatch app has leveraged the use of activity lifecycle methods to ensure that it is persistent with it's data. Here is an explanation of the activity lifecycle methods:
+
+
 
 As a user uses your app, as he/she navigates through, out of and back to your app, the Activity instances in your app transitions through different states in their lifecycle. The Activity class provides a number of callbacks to allow the activity to know that a state has changed. These might be that the system is creating, stopping or resuming an activity , or destroying the process in which the activity resides in due various reasons.
 Within the lifecycle callback methods, you can declare how your activity behaves when the user leaves and re-enters the activity. The callbacks provided by the Activity class are onCreate(), onStart(), onResume(), onPause(), onStop(), and onDestroy(). The systems invokes each of these callbacks as an activity enters a new state.
