@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/img">
 
     <Chronometer
         android:id="@+id/chronometer"
@@ -14,19 +15,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:textSize="30sp"
+        android:textColor="@color/white"
         android:gravity="center"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"/>
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
+        android:layout_marginBottom="100dp"
+        android:gravity="center"
         android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/chronometer"
-        android:gravity="center">
+        app:layout_constraintTop_toBottomOf="@+id/chronometer">
 
         <Button
             android:id="@+id/btn_start"
@@ -40,7 +45,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:text="@string/pause"/>
+            android:text="@string/pause" />
+
         <Button
             android:id="@+id/btn_reset"
             android:layout_width="wrap_content"
